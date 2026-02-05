@@ -1,0 +1,10 @@
+[theme]
+primaryColor = "#9D4EDD"  # Purple
+backgroundColor = "#FFFFFF"  # White
+secondaryBackgroundColor = "#F0F2F6"  # Light gray
+textColor = "#262730"  # Dark text
+font = "sans serif"
+
+[server]
+enableXsrfProtection = false
+enableCORS = false

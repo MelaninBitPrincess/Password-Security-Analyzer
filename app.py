@@ -2,6 +2,92 @@ import streamlit as st
 from password_checker import PasswordAnalyzer
 import pandas as pd
 
+import streamlit as st
+
+# Custom CSS
+def local_css():
+    st.markdown("""
+    <style>
+    /* Main background gradient */
+    .stApp {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    /* Custom headers */
+    h1 {
+        color: #FFD700;
+        font-family: 'Arial Black', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+        color: #FFA500;
+        border-bottom: 2px solid #FFD700;
+        padding-bottom: 10px;
+    }
+
+    /* Buttons */
+    .stButton>button {
+        background: linear-gradient(90deg, #FF6B9D 0%, #C44569 100%);
+        color: white;
+        border-radius: 20px;
+        padding: 10px 30px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        transition: all 0.3s;
+    }
+
+    .stButton>button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Input fields */
+    .stTextInput>div>div>input {
+        border-radius: 10px;
+        border: 2px solid #FFD700;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #2C1810 0%, #1a0f0a 100%);
+    }
+
+    /* Metrics */
+    [data-testid="stMetricValue"] {
+        font-size: 32px;
+        color: #00FF41;
+        font-weight: bold;
+    }
+
+    /* Cards/Containers */
+    .stAlert {
+        border-radius: 15px;
+        border-left: 5px solid #FFD700;
+    }
+
+    /* Progress bar */
+    .stProgress > div > div > div {
+        background: linear-gradient(90deg, #FF6B9D 0%, #FFD700 100%);
+    }
+
+    /* Code blocks */
+    code {
+        background-color: #1E1E1E !important;
+        color: #00FF41 !important;
+        border: 1px solid #FFD700 !important;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+# Call this function at the start of your app
+local_css()
+
 # Page configuration
 st.set_page_config(
     page_title="Password Security Analyzer",
