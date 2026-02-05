@@ -1,16 +1,21 @@
 # Password Security Analyzer
 
-A cybersecurity educational tool that analyzes password strength and generates secure passwords.
+A cybersecurity educational tool for analyzing password strength and generating secure passwords.
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://melaninbitprincess-password-security-analyzer.streamlit.app)
+
+## Live Demo
+**Try it here:** [https://melaninbitprincess-password-security-analyzer.streamlit.app](https://melaninbitprincess-password-security-analyzer.streamlit.app)
 
 ## Features
-- Password strength analysis with detailed scoring
-- Secure password generator with customizable options
-- Passphrase generator for memorable passwords
-- Educational security tips and recommendations
-- Command-line interface
+- **Password Strength Analysis** - Real-time scoring with detailed feedback
+- **Secure Password Generator** - Cryptographically secure random passwords
+- **Passphrase Generator** - Memorable and secure passphrases
+- **Security Education** - Learn about password best practices
 
 ## Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/Password-Security-Analyzer.git
+git clone https://github.com/MelaninBitPrincess/Password-Security-Analyzer.git
 cd Password-Security-Analyzer
 pip install -r requirements.txt
+streamlit run app.py
